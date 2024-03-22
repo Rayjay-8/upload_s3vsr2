@@ -16,8 +16,8 @@ const r2  = new S3Client({
 async function getFile(){
   const params = {
     Bucket: "videos-remotion-uploadbyclient",
-    Key: "rem222.png",
-    ContentType: "image/png",//"video/mp4",
+    Key: "videome.mp4",
+    //ContentType: "image/png",//"video/mp4",
    };
 
    const command = new GetObjectCommand(params)
@@ -29,8 +29,8 @@ async function uploadTo(filePath, onProgress) {
   //  const fileStream = fs.createReadStream(filePath);
    const params = {
      Bucket: "videos-remotion-uploadbyclient",
-     Key: "rem222.png",
-     ContentType: "image/png",//"video/mp4",
+     Key: "videome.mp4",
+     ContentType: "video/mp4"//"image/png",//,
     };
     // Body: fileStream,
   
